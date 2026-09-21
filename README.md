@@ -12,8 +12,6 @@ This is not a course-completion tracker. Every folder below is a real lab: a tar
 
 ## 🔗 Quick Access - Skip Straight to the Work
 
-Recruiters and reviewers: start here instead of scrolling.
-
 | | |
 |---|---|
 | 📄 **Scheme of Work / Program Plan** | [SCHEME-OF-WORK.md](./SCHEME-OF-WORK.md) |
@@ -32,7 +30,7 @@ Recruiters and reviewers: start here instead of scrolling.
 - **Structure:** 3 Phases of 30 Days, each closing with a milestone project
 - **Core Environment:** Kali Linux, Docker, VirtualBox/VMware lab VMs, AWS/Azure free-tier
 - **Certifications in progress:** CompTIA Security+ (Day ~45–50) → eJPT (Day ~80–85) → OSCP (post–Day 90)
-- **Methodology:** Every project follows a fixed documentation standard — Objective → Setup → Steps → Root Cause → Remediation → Lessons Learned - so every entry reads like a professional deliverable, not a study note.
+- **Methodology:** Every project follows a fixed documentation standard - Objective → Setup → Steps → Root Cause → Remediation → Lessons Learned - so every entry reads like a professional deliverable, not a study note.
 
 ---
 
@@ -89,7 +87,7 @@ Each `day-XX-topic/README.md` follows this template:
 
 | Day | Project | Category | Status | Link |
 |---|---|---|---|---|
-| 01 | SQL Injection — OWASP Juice Shop | Web App / Red | 🔲 Pending | [day-01](./phase-1-foundations-days-01-30/day-01-sqli-juiceshop/) |
+| 01 | SQL Injection - OWASP Juice Shop | Web App / Red | 🔲 Pending | [day-01](./phase-1-foundations-days-01-30/day-01-sqli-juiceshop/) |
 | 02–05 | XSS, Broken Auth, IDOR, CSRF | Web App / Red | 🔲 Pending | — |
 | 06–10 | Nmap, Wireshark, Firewall, MITM | Network Security | 🔲 Pending | — |
 | 11–15 | Linux Hardening & Auditing | Infra / Blue | 🔲 Pending | — |
@@ -126,12 +124,14 @@ Each `day-XX-topic/README.md` follows this template:
 
 Aspiring [SOC Analyst / Cloud Security Analyst] building a hands-on, evidence-based portfolio one documented project at a time.
 
-- <img src="https://cdn.simpleicons.org/linkedin/0077B5" width="16" height="16" /> **LinkedIn:** [ifecointech](https://www.linkedin.com/in/ifecointech)
-- <img src="https://cdn.simpleicons.org/gmail/D14836" width="16" height="16" /> **Email:** [i.nebeuwa@gmail.com](mailto:i.nebeuwa@gmail.com)
-- Portfolio site: [Add link, once built]
+<p>
+  <img src="https://img.icons8.com/color/48/linkedin.png" width="18" height="18" valign="middle" /> <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/ifecointech">ifecointech</a><br />
+  <img src="https://cdn.simpleicons.org/gmail/D14836" width="18" height="18" valign="middle" /> <b>Email:</b> <a href="mailto:i.nebeuwa@gmail.com">i.nebeuwa@gmail.com</a><br />
+  <img src="https://cdn.simpleicons.org/firefox/FF7139" width="18" height="18" valign="middle" /> <b>Portfolio site:</b> <a href="https://yourportfolio.com">[Add link, once built]</a>
+</p>
 
 ---
 
 ## 📄 License
 
-This repository is licensed under the [MIT License](./LICENSE) — labs and write-ups are shared for educational purposes. All exploitation shown was performed exclusively against intentionally vulnerable, self-hosted lab environments.
+This repository is licensed under the [MIT License](./LICENSE) - labs and write-ups are shared for educational purposes. All exploitation shown was performed exclusively against intentionally vulnerable, self-hosted lab environments.
