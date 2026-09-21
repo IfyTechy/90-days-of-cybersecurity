@@ -1,27 +1,27 @@
-# 🛡️ 90 Days of Cybersecurity — Blue Team Foundations, Offensive Depth & Cloud Security
+# 🛡️ 90 Days of Cybersecurity - Blue Team Foundations, Offensive Depth & Cloud Security
 
 [![Days Completed](https://img.shields.io/badge/Progress-Day%200%2F90-red)](#-table-of-contents--project-index)
 [![Track](https://img.shields.io/badge/Track-Blue%20Team%20%2B%20Red%20Team%20%2B%20Cloud-blue)]()
 [![Cert Goal](https://img.shields.io/badge/Certifications-Security%2B%20%E2%86%92%20eJPT-informational)]()
 
-A 90-day, self-directed cybersecurity training log — one hands-on project every day, documented to a professional incident-report/pentest-report standard, and pushed publicly to build a defensible, evidence-backed portfolio.
+A 90-day, self-directed cybersecurity training log - one hands-on project every day, documented to a professional incident-report/pentest-report standard, and pushed publicly to build a defensible, evidence-backed portfolio.
 
-This is not a course-completion tracker. Every folder below is a real lab: a target was set up, an attack or defense technique was executed, root cause was analyzed, and remediation was written — the same workflow used in real SOC and pentest engagements.
+This is not a course-completion tracker. Every folder below is a real lab: a target was set up, an attack or defense technique was executed, root cause was analyzed, and remediation was written - the same workflow used in real SOC and pentest engagements.
 
 ---
 
-## 🔗 Quick Access — Skip Straight to the Work
+## 🔗 Quick Access - Skip Straight to the Work
 
 Recruiters and reviewers: start here instead of scrolling.
 
 | | |
 |---|---|
 | 📄 **Scheme of Work / Program Plan** | [SCHEME-OF-WORK.md](./SCHEME-OF-WORK.md) |
-| 🥇 **Milestone 1 — Mini Pentest Report** (Day 30) | [→ View Report](./phase-1-foundations-days-01-30/milestone-01-mini-pentest-report/) |
-| 🥈 **Milestone 2 — Attack + Detect + Respond Case Study** (Day 60) | [→ View Case Study](./phase-2-offense-defense-days-31-60/milestone-02-attack-detect-respond/) |
+| 🥇 **Milestone 1 - Mini Pentest Report** (Day 30) | [→ View Report](./phase-1-foundations-days-01-30/milestone-01-mini-pentest-report/) |
+| 🥈 **Milestone 2 - Attack + Detect + Respond Case Study** (Day 60) | [→ View Case Study](./phase-2-offense-defense-days-31-60/milestone-02-attack-detect-respond/) |
 | 🏆 **Capstone Project** (Day 90) | [→ View Capstone](./phase-3-specialization-days-61-90/capstone-project/) |
 | 📊 **Skills Matrix** (tools, techniques, MITRE ATT&CK / OWASP mapping) | [SKILLS-MATRIX.md](./SKILLS-MATRIX.md) |
-| 💼 **LinkedIn — daily progress log** | [Add your LinkedIn URL here] |
+| 💼 **LinkedIn - daily progress log** | [Add your LinkedIn URL here] |
 
 ---
 
@@ -32,7 +32,7 @@ Recruiters and reviewers: start here instead of scrolling.
 - **Structure:** 3 Phases of 30 Days, each closing with a milestone project
 - **Core Environment:** Kali Linux, Docker, VirtualBox/VMware lab VMs, AWS/Azure free-tier
 - **Certifications in progress:** CompTIA Security+ (Day ~45–50) → eJPT (Day ~80–85) → OSCP (post–Day 90)
-- **Methodology:** Every project follows a fixed documentation standard — Objective → Setup → Steps → Root Cause → Remediation → Lessons Learned — so every entry reads like a professional deliverable, not a study note.
+- **Methodology:** Every project follows a fixed documentation standard — Objective → Setup → Steps → Root Cause → Remediation → Lessons Learned - so every entry reads like a professional deliverable, not a study note.
 
 ---
 
@@ -126,8 +126,8 @@ Each `day-XX-topic/README.md` follows this template:
 
 Aspiring [SOC Analyst / Cloud Security Analyst] building a hands-on, evidence-based portfolio one documented project at a time.
 
-- LinkedIn: [Add link]
-- Email: [Add email]
+- <img src="https://cdn.simpleicons.org/linkedin/0077B5" width="16" height="16" /> **LinkedIn:** [ifecointech](https://www.linkedin.com/in/ifecointech)
+- <img src="https://cdn.simpleicons.org/gmail/D14836" width="16" height="16" /> **Email:** [i.nebeuwa@gmail.com](mailto:i.nebeuwa@gmail.com)
 - Portfolio site: [Add link, once built]
 
 ---
