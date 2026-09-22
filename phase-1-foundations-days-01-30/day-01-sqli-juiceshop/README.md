@@ -10,15 +10,18 @@ account, demonstrating OWASP A03:2021 (Injection).
 
 ## Environment Setup
 
-- Host: Virtual Machine
-- Target: OWASP Juice Shop via Docker - `docker run --rm -p 3000:3000 bkimminich/juice-shop`
-- Tools: browser dev tools, docker
+**- Host:** Virtual Machine
+**- Target:** OWASP Juice Shop via Docker - `docker run --rm -p 3000:3000 bkimminich/juice-shop`
+**- Tools:** browser dev tools, docker
 
 ## Vulnerability / Technique
 
 - **OWASP:** A03:2021 - Injection
 - **MITRE ATT&CK:** T1190 - Exploit Public-Facing Application
-- [Short technical description of the vulnerability class.]
+- **SQL Injection (SQLi):** A vulnerability class where untrusted user input
+  is concatenated directly into a SQL query without sanitization or
+  parameterization, allowing an attacker to alter the query's logic and
+  execute unintended database commands.
 
 ## Steps to Reproduce
 
@@ -30,7 +33,16 @@ account, demonstrating OWASP A03:2021 (Injection).
 5. Verified the server response, which returned a valid authentication
    token and umail: "admin@juice-sh.op" - confirming successful
    authentication bypass into the administrator account
-> Screenshots go in [`./screenshots/`](./screenshots/) - numbered and captioned.
+
+6. Captured the request in Firefox DevTools (Network tab):
+
+<img width="679" height="483" alt="image" src="https://github.com/user-attachments/assets/caada479-cefa-4d3c-b6b7-3000ba964c96" />
+
+---
+
+7. Verified the server response, confirming authentication bypass:
+
+<img width="688" height="556" alt="image" src="https://github.com/user-attachments/assets/47663212-34fb-418d-b74f-91a8e7fa7f18" />
 
 ## Root Cause Analysis
 
@@ -84,4 +96,18 @@ as a literal string.
 
 ## What I Learned
 
-[Key takeaways, surprises, follow-up questions.]
+Working through this SQL injection taught me that databases can be tricked
+into revealing information they were never meant to give out - not through
+some complex hack, but simply by exploiting how literally they follow
+syntax. It reinforced that a database only ever does exactly what it's told,
+with no built-in sense of "this looks wrong." That responsibility sits
+entirely with the developer, through sanitizing input, using a security
+layer such as validating email formats, adding rate-limiting, and using
+safe, generic error handling.
+
+Beyond the technical lesson, this exercise also taught me that cybersecurity
+isn't just about finding vulnerabilities - it's built on trust and precision.
+The same way a developer must know the difference between "remove" and
+"delete" before touching a production database, an ethical hacker must
+understand not just how to break something, but the real business impact of
+doing so.
