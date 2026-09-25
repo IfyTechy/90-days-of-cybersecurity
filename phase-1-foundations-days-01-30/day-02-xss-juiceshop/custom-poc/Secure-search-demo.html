@@ -1,0 +1,30 @@
+<!-- Secure-search-demo.html -->
+<form id="searchForm" action="/search" method="GET">
+  <input id="searchInput" type="text" name="q" placeholder="Search products...">
+  <button type="submit">Search</button>
+</form>
+<div id="results"></div>
+<script>
+  // Grab the form and input
+  const form = document.getElementById('searchForm');
+  const input = document.getElementById('searchInput');
+
+  // Basic sanitization: strip characters that enable HTML/script injection
+  function sanitizeInput(str) {
+    return str.replace(/[<>]/g, "");
+  }
+
+  // Listen for submit
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // stop the page reload
+
+    const query = sanitizeInput(input.value.trim());
+
+    if (query) {
+      // SAFE: textContent never parses input as HTML, only ever displays it as literal text
+      document.getElementById("results").textContent = "You searched for: " + query;
+    } else {
+      alert("Please enter a search term!");
+    }
+  });
+</script>

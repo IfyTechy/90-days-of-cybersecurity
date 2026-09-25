@@ -1,0 +1,29 @@
+<!-- index.html -->
+<form id="searchForm" action="/search" method="GET">
+  <input id="searchInput" type="text" name="q" placeholder="Search products...">
+  <button type="submit">Search</button>
+</form>
+<div id="results"></div>
+<script>
+  // Grab the form and input
+  const form = document.getElementById('searchForm');
+  const input = document.getElementById('searchInput');
+  
+  // Listen for submit
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // stop the page reload
+
+    const query = input.value.trim();
+
+    if (query) {
+  // For now, just show the search term
+  document.getElementById("results").innerHTML = "You searched for: " + query;
+
+  // Or redirect to a results page:
+  // window.location.href = "/results.html?q=" + encodeURIComponent(query);
+} else {
+  alert("You searched for: " + query);
+}
+  });
+</script>
+
